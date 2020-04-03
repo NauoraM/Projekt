@@ -94,6 +94,11 @@ p{
 #weather-box{
     background-color: transparent;
     border-radius: 5px;
-    margin-top: 230px;
+    margin-top: 50px;
     margin-bottom: 200px;
+}
+
+.DPDC{
+    margin-left: 240px;
+    margin-top: 100px;
 }
