@@ -2,13 +2,61 @@
 <html>
 <head>
   <meta charset="utf-8">
-    <title> Weather API </title>
+    <title> Weather </title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-  <div id="weather-box">
+  <div class="DPDC" cityid="1293" lang="en" id="dayspedia_widget_3c9400b6c016eb43" host="https://dayspedia.com" ampm="false" nightsign="false" style="background-color: initial; background-image: none; border-width: 0px;">
+	<style media="screen" id="dayspedia_widget_3c9400b6c016eb43_style">
+  .DPDC{display:table;position:relative;box-sizing:border-box;font-size:100.01%;font-style:normal;font-family:Arial;background-position:50% 50%;background-repeat:no-repeat;background-size:cover;overflow:hidden;user-select:none}
+  .DPDCh,.DPDCd{width:fit-content;line-height:1.4}
+  .DPDCh{margin-bottom:1em}
+  .DPDCd{margin-top:.24em}
+  .DPDCt{line-height:1}
+  .DPDCth,.DPDCtm,.DPDCts{display:inline-block;vertical-align:text-top;white-space:nowrap}
+  .DPDCth{min-width:1.15em}
+  .DPDCtm,.DPDCts{min-width:1.44em}
+  .DPDCtm::before,.DPDCts::before{display:inline-block;content:':';vertical-align:middle;margin:-.34em 0 0 -.07em;width:.32em;text-align:center;opacity:.72;filter:alpha(opacity=72)}
+  .DPDCt12{display:inline-block;vertical-align:text-top;font-size:40%}
+  .DPDCdm::after{content:' '}
+  .DPDCda::after{content:', '}
+  .DPDCdt{margin-right:.48em}
+  .DPDCtn{display:inline-block;position:relative;width:13px;height:13px;border:2px solid;border-radius:50%;overflow:hidden}
+  .DPDCtn>i{display:block;content:'';position:absolute;right:33%;top:-5%;width:85%;height:85%;border-radius:50%}
+  .DPDC{width:auto;padding:24px;background-color:#ffffff;border:1px solid #343434;border-radius:8px} /* widget width, padding, background, border, rounded corners */
+  .DPDCh{color:#007DBF;font-weight:normal} /* headline color, font-weight*/
+  .DPDCt,.DPDCd{color:#343434;font-weight:bold} /* time & date color, font-weight */
+  .DPDCtn{border-color:#343434} /* night-sign color = time & date color */
+  .DPDCtn>i{background-color:#343434} /* night-sign color = time & date color */
+  .DPDCt{font-size:48px} /* time font-size */
+  .DPDCh,.DPDCd{font-size:16px} /* headline & date font-size */
+  </style>
+
+  <a class="DPl" href="https://dayspedia.com/time/de/Berlin/" target="_blank" style="display:block!important;text-decoration:none!important;border:none!important;cursor:pointer!important;background:transparent!important;line-height:0!important;text-shadow:none!important;position:absolute;z-index:1;top:0;right:0;bottom:0;left:0">
+  </svg>
+  <span title="DaysPedia.com" style="position: absolute; right: 28px; bottom: 6px; height: 10px; width: 60px; overflow: hidden; text-align: right; color: rgb(255, 255, 255); font: 10px / 10px Arial, sans-serif !important;"></span>
+  </a>
+  <div class="DPDCh" style="color: rgb(255, 255, 255); display: none; text-align: center; margin-left: auto; margin-right: auto; font-size: 32px;">Current Time in Berlin</div>
+  <div class="DPDCt" style="color: rgb(255, 255, 255); font-weight: normal; text-align: center; margin-left: auto; margin-right: auto; font-size: 96px;">
+  <span class="DPDCth">14</span><span class="DPDCtm">52</span><span class="DPDCts" style="display: none;">06</span><span class="DPDCt12" style="display: none;"></span>
+  </div>
+  <div class="DPDCd" style="color: rgb(255, 255, 255); font-weight: normal; text-align: center; margin-left: 50px; margin-right: auto; font-size: 32px;">
+  <span class="DPDCdt">Wed, April 1</span><span class="DPDCtn" style="display: none; border-color: rgb(255, 255, 255); width: 27px; height: 27px;"><i style="background-color: rgb(255, 255, 255);"></i></span>
+  </div>
+  <script>
+  var s, t; s = document.createElement("script"); s.type = "text/javascript";
+  s.src = "//cdn.dayspedia.com/js/dwidget.min.vef6161ef.js";
+  t = document.getElementsByTagName('script')[0]; t.parentNode.insertBefore(s, t);
+  s.onload = function() {
+  window.dwidget = new window.DigitClock();
+  window.dwidget.init("dayspedia_widget_3c9400b6c016eb43");
+  };
+  </script>
+  </div>
+  
+  <div class="weather-box">
     <div class="container">
       <fieldset>
         <form action="/" method="post">
